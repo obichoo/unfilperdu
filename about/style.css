@@ -1,0 +1,112 @@
+:root {
+    --main-bg-color: #e4e5d8;
+    --main-blue: #445381;
+    --main-red: #f57676;
+}
+
+.about-text,
+#launch-date {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.about-text p,
+#launch-date {
+    line-height: 30px;
+}
+
+.page {
+    margin-top: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.insta-link {
+    padding: 0;
+    margin: 0;
+    animation: unset;
+}
+
+form input,
+form textarea {
+    background-color: var(--main-bg-color);
+    border: none;
+    outline: none;
+    margin: 10px 0 10px 7%;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 14px #b4b5ad66, inset -2px -2px 14px #ffffff85, -7px -7px 14px #b0b1aa74, 7px 7px 14px #ffffff87;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-blue);
+}
+
+.name,
+textarea {
+    width: 55%;
+    padding: 10px;
+}
+
+.mail,
+textarea {
+    width: 70%;
+    resize: none;
+}
+
+form .send {
+    margin: 10px auto 50px auto;
+    padding: 15px;
+    font-size: 1.15rem;
+    box-shadow: 7px 7px 14px #b0b1aa74, -7px -7px 14px #ffffff87;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+form small {
+    margin-left: 8%;
+    opacity: 0.3;
+}
+
+@media screen and (min-width: 769px) {
+    .page {
+        font-size: 1.5rem;
+        width: 60vw;
+        margin-top: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text p {
+        line-height: 50px;
+        margin: 40px 0 40px 0;
+    }
+
+    .about-text {
+        margin-bottom: 200px;
+    }
+
+    .page form * {
+        margin: 50px auto 0 auto;
+    }
+
+    .page form small {
+        margin: 20px 0 20px 60%;
+    }
+
+    .page form .send {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .page form .identity {
+        display: flex;
+        width: 48vw;
+        margin: auto;
+    }
+
+    .page form .identity * {
+        width: 18vw;
+        margin: auto;
+    }
+}

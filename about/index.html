@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unfilperdu &rArr; À propos</title>
+        <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../global.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="corner-string"><img src="../assets/img/fil-coin.svg" alt="" /></div>
+        <header>
+            <div id="menu-icon" onclick="menuToggle()"><img src="../assets/img/liste.svg" alt="" /></div>
+            <div id="menu">
+                <div id="menu-close" onclick="menuToggle()">
+                    <img src="../assets/img/cross.svg" alt="" />
+                </div>
+                <nav id="menu-links" class="menu-open">
+                    <a href="../">HOME</a>
+                    <a href="../shop/">SHOP</a>
+                    <a href="#">ABOUT</a>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div id="launch-date">
+                <p><i>Mis en ligne le 09 mai 2021</i></p>
+            </div>
+            <div class="about-text">
+                <p>Unfilperdu est une marque lancée le 21 décembre 2020.</p>
+                <p>Imaginée et designée par Edouard, c'est une marque innovante avec ses visuels légers et discrets dans un style flat et minimaliste.</p>
+                <p>
+                    Les motifs des vêtements sont brodés principalement car cela me représente mais également car c'est moins présent dans le monde de la mode.
+                </p>
+                <p>Pourquoi des tee-shirts ? Le tee-shirt est un vêtement unisexe porté par les jeunes tout autant que par les personnes âgées.</p>
+                <p>Créer un fil qui trace son chemin dans le tissu en se perdant.</p>
+                <p>
+                    Tu peux retrouver la marque sur Instagram (<a href="https://www.instagram.com/unfilperdu/" class="insta-link">@Unfilperdu</a>), tu peux
+                    également retrouver un formulaire juste en dessous si tu as une question ou un commentaire à faire.
+                </p>
+            </div>
+            <form action="" method="POST">
+                <div class="identity">
+                    <input name="prenom" type="text" class="name" placeholder="Prénom" />
+                    <input name="nom" type="text" class="name" placeholder="Nom" />
+                </div>
+                <input name="email" type="email" required class="name mail" placeholder="votre@mail.fr*" />
+                <textarea name="commentaire" id="" cols="10" rows="5" placeholder="Avez-vous des questions ?*"></textarea>
+                <small>*: champs obligatoires</small>
+                <input name="envoyer" type="submit" required class="send" value="Envoyer" />
+            </form>
+        </main>
+
+        <script src="../assets/scripts/script.js"></script>
+    </body>
+</html>

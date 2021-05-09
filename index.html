@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unfilperdu &rArr; Accueil</title>
+        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="corner-string"><img src="assets/img/fil-coin.svg" alt="" /></div>
+        <header>
+            <div id="menu-icon" onclick="menuToggle()"><img src="assets/img/liste.svg" alt="" /></div>
+            <div id="menu">
+                <div id="menu-close" onclick="menuToggle()">
+                    <img src="assets/img/cross.svg" alt="" />
+                </div>
+                <nav id="menu-links" class="menu-open">
+                    <a href="#">HOME</a>
+                    <a href="shop/">SHOP</a>
+                    <a href="about/">ABOUT</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="page" id="s1" style="height: 100vh">
+                <div class="tshirt-container">
+                    <div id="homepage-tshirt">
+                        <img src="assets/img/t-shirt.svg" class="tshirt" alt="" />
+                    </div>
+                </div>
+                <div id="titre">
+                    <h1>Unfilperdu</h1>
+                    <h2>Marque fictive de <br class="title-wrap" />création de tee-shirt</h2>
+                </div>
+
+                <a href="shop/" id="discover">Découvrir</a>
+                <div class="scroll-symbol"></div>
+            </section>
+            <section class="page" id="s2">
+                <div class="fp">
+                    <img src="assets/img/tshirt-expo.png" alt="" class="exposed-tshirt" />
+                    <div>
+                        <p>Unfilperdu est une marque designée par Edouard Baillon qui a pour principe d'avoir des visuels uniquement en broderie</p>
+                    </div>
+                </div>
+                <div><img src="assets/img/fil-back.svg" alt="" class="fil-back" /></div>
+                <div class="sp">
+                    <video src="assets/img/modele-gif.mp4" muted loop autoplay></video>
+                    <div>
+                        <p>
+                            Bimestriellement, la collection change ce qui accompagne un nouveau thème.
+                            <br />Le 1<sup>er</sup> est l'abstrait, qui me permet de réaliser tous les design qui me passent par la tête facilement.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="assets/scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unfilperdu &rArr; Boutique</title>
+        <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../global.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="corner-string"><img src="../assets/img/fil-coin.svg" alt="" /></div>
+        <header>
+            <div id="menu-icon" onclick="menuToggle()"><img src="../assets/img/liste.svg" alt="" /></div>
+            <div id="menu">
+                <div id="menu-close" onclick="menuToggle()">
+                    <img src="../assets/img/cross.svg" alt="" />
+                </div>
+                <nav id="menu-links" class="menu-open">
+                    <a href="../">HOME</a>
+                    <a href="#">SHOP</a>
+                    <a href="../about/">ABOUT</a>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="filter-collections">
+                <h1 class="temp-alert">Nos tee-shirts ne sont pas encore à vendre !</h1>
+                <h2>Choisissez une collection</h2>
+                <div class="filters">
+                    <input type="button" class="filter selected-filter" id="all" value="Toutes" />
+                    <input type="button" class="filter" id="abstrait" value="Abstrait" />
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <div class="product-img"><img src="../assets/img/produits/motif-multicolor.jpg" alt="" /></div>
+                    <h3 class="product-desc">Tee-shirt - Forme couleur</h3>
+                    <h4 class="product-price">19,90€</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img"><img src="../assets/img/produits/motif-vague.jpg" alt="" /></div>
+                    <h3 class="product-desc">Tee-shirt - Vague</h3>
+                    <h4 class="product-price">19,90€</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img"><img src="../assets/img/produits/motif-cercles.jpg" alt="" /></div>
+                    <h3 class="product-desc">Tee-shirt - Rond</h3>
+                    <h4 class="product-price">19,90€</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img"><img src="../assets/img/produits/motif-couture_bleu.jpg" alt="" /></div>
+                    <h3 class="product-desc">Tee-shirt - Plan</h3>
+                    <h4 class="product-price">19,90€</h4>
+                </div>
+            </div>
+        </main>
+
+        <script src="../assets/scripts/script.js"></script>
+        <script>
+            const filters = document.getElementsByClassName('filter');
+
+            for (let filterElement = 0; filterElement < filters.length; filterElement++) {
+                filters[filterElement].addEventListener('click', toggleFilters, false);
+            }
+
+            function toggleFilters(e) {
+                for (let filter = 0; filter < filters.length; filter++) {
+                    filters[filter].classList.remove('selected-filter');
+                }
+                e.target.classList.add('selected-filter');
+            }
+        </script>
+    </body>
+</html>
